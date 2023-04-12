@@ -12,7 +12,7 @@ AHMSPushKitManager::AHMSPushKitManager()
 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	//Push::setListener(new PushKitListener());
+	Push::setListener(new PushKitListener());
 }
 
 AHMSPushKitManager::~AHMSPushKitManager()
@@ -25,10 +25,10 @@ void AHMSPushKitManager::BeginPlay()
 {
 	Super::BeginPlay();
 
-	//Push::init();
-	//Push::setAutoInitEnabled(true);
-	//Push::subscribe("topic1");
-	//Push::getToken();
+	Push::init();
+	Push::setAutoInitEnabled(true);
+	Push::subscribe("topic1");
+	Push::getToken();
 
 }
 
@@ -40,11 +40,11 @@ void AHMSPushKitManager::Tick(float DeltaTime)
 
 void AHMSPushKitManager::UnSubscribe()
 {
-	//Push::unSubscribe("topic1");
+	Push::unSubscribe("topic1");
 }
 
 void AHMSPushKitManager::DeleteToken()
 {
-	//Push::deleteToken();
+	Push::deleteToken();
 }
 

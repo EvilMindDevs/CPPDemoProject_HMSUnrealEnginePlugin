@@ -13,7 +13,7 @@ AHMSIAPKitManager::AHMSIAPKitManager()
 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	//Iap::setListener(new IapKitListener());
+	Iap::setListener(new IapKitListener());
 }
 
 // Called when the game starts or when spawned
@@ -21,7 +21,7 @@ void AHMSIAPKitManager::BeginPlay()
 {
 	Super::BeginPlay();
 
-	//Iap::checkEnvironment();
+	Iap::checkEnvironment();
 }
 
 // Called every frame

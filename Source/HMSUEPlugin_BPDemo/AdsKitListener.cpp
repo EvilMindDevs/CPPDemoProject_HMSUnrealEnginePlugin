@@ -99,7 +99,7 @@ void AdsKitListener::onRewardAdClosed()
 {
 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("onRewardAdClosed"));
 
-	//Ads::loadRewardAd("testx9dtjwj8hp");
+	Ads::loadRewardAd("testx9dtjwj8hp");
 
 }
 
